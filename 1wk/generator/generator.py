@@ -29,9 +29,10 @@ def getDS(numberList):
 
 numList = [2, 4, 6, 8, 10]
 ds = getDS(numList)
-for i in range(len(numList)):
+while True:
     try: 
         print(next(ds))
     except:
         print("List END")
+        break
 
